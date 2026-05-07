@@ -10,5 +10,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv sync"
+  "postCreateCommand": "pip install uv && uv sync"
 }
