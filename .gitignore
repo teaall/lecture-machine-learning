@@ -1,0 +1,10 @@
+
+# jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# local python environment
+.venv/
