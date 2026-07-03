@@ -1,0 +1,21 @@
+[project]
+name = "ml-ss-2026-ex-04"
+version = "0.1.0"
+description = "Homework 4: neural networks and backpropagation"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel",
+    "jupyter==1.0.0",
+    "jupyterlab==4.4.1",
+    "matplotlib==3.10.0",
+    "numpy==2.0.2",
+    "torch==2.8.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
