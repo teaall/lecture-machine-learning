@@ -20,10 +20,10 @@ dependencies = [
 de-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0.tar.gz" }
 en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz" }
 
-
-# To switch backends: uncomment the desired block below, run `uv sync`.
-# --- OPTION 1: CUDA 12.8 ---
-torch = { index = "pytorch-cu128" }
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 # --- OPTION 2: CPU ONLY ---
 # torch = { index = "pytorch-cpu" }
@@ -31,9 +31,4 @@ torch = { index = "pytorch-cu128" }
 [[tool.uv.index]]
 name = "pytorch-cu128"
 url = "https://download.pytorch.org/whl/cu128"
-explicit = true
-
-[[tool.uv.index]]
-name = "pytorch-cpu"
-url = "https://download.pytorch.org/whl/cpu"
 explicit = true

@@ -8,3 +8,9 @@
 
 # local python environment
 .venv/
+
+# python bytecode cache
+__pycache__/
+
+# trained model checkpoints
+exercises/task5/ex_05_transformers/model/
